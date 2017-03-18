@@ -1,0 +1,4 @@
+\urlstyle{same}\faHome   Addresse Postale\\
+  \faEnvelope \href{mailto:marie@simatic.org}{ marie@simatic.org}\\
+  \faPhone    Numéro de Téléphone\\
+  \faGithub \href{https://github.com/tamicasireim}{  github.com/tamicasireim}

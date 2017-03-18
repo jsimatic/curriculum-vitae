@@ -1,0 +1,21 @@
+#+TITLE: CV de Marie SIMATIC
+
+* Utilisation rapide
+
+Un petit =make= et c'est parti.
+=make publish= pour 
+=make clean= pour nettoyer les logs etc.
+ 
+* Installation (sous linux)
+
+- installer =xelatex=
+- cloner le repo
+- installation de la police :
+  - copier le contenu du dossier ./fonts dans ~/.fonts
+  - =fc-cache -fv= pour mettre à jour le cache des polices
+- =cp contactInfo.txt contactInfo.local.txt=
+- enjoy !
+
+* Crédits
+
+Template de base par Hieu Do, lui même forké de https://github.com/deedy/Deedy-Resume
