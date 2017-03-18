@@ -3,7 +3,9 @@
 * Utilisation rapide
 
 Un petit =make= et c'est parti.
-=make publish= pour 
+
+=make= ou =make pdf= pour utiliser les données non personnelles, =make publish= pour utiliser les informations définies dans contactInfo.local.txt
+
 =make clean= pour nettoyer les logs etc.
  
 * Installation (sous linux)
