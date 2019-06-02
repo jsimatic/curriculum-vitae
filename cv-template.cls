@@ -14,12 +14,20 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage[absolute]{textpos}
-\usepackage[UKenglish]{babel}
-\usepackage[UKenglish]{isodate}
-\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[french]{babel}
+\usepackage[french]{isodate}
+\usepackage{fontspec}
+\usepackage{xltxtra,xunicode}
+\defaultfontfeatures{Extension = .otf}% adds .otf to end of path when font loaded without ext parameter e.g. \newfontfamily{\FA}{FontAwesome} > \newfontfamily{\FA}{FontAwesome.otf}
 \usepackage{fontawesome}
 \pagenumbering{gobble}
 \usepackage{datetime2}
+\usepackage{xspace}
+
+\usepackage{enumitem}
+\setitemize{leftmargin=*, noitemsep, topsep=0pt,
+  label=\faCaretRight, font=\normalsize}
+
 
 % Color definitions
 \definecolor{date}{HTML}{000000} 
@@ -45,9 +53,9 @@
     % 1 - Name, 2 - family Name 3 - Nationality, 3 - Title, 5 - Contact infos
   \raggedright{\parbox[b]{15em}{
       \centering
-      \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{40pt}{0cm}\selectfont #1
-      \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{48pt}{0cm}\selectfont #2
-      \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{13pt}{0cm}\selectfont #3
+      \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{40pt}{0cm}\selectfont #1 \\
+      \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{40pt}{0cm}\selectfont #2 \\
+      \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{13pt}{0cm}\selectfont #3 
     }}
     \hfill
     \raggedleft{\parbox[b]{32em}{
@@ -86,18 +94,20 @@
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Positions command
-\newcommand{\position}[2]{	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1}\normalfont
-\hfill
-\color{subheadings}\raggedleft\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#2\\}\normalfont
+\newcommand{\position}[2]{
+  \color{subheadings}\raggedright
+  \scshape
+  \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1} \normalfont
+  \hfill
+  \color{subheadings}\raggedleft\scshape
+  \fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#2} \normalfont
 }
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Location command
-\newcommand{\location}[1]{\color{primary}\raggedright\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{12pt}\selectfont {#1\\} \normalfont}
+\newcommand{\location}[1]{\color{primary}\raggedright\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Reg}\fontsize{12pt}{12pt}\selectfont {#1\\} \normalfont}
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Section seperators command
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
 
-% Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}

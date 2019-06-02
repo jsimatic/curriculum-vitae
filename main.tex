@@ -11,6 +11,8 @@
 %%% TeX-engine: xetex
 %%% End: 
 
+\newcommand{\mycaret}{\faCaretRight\xspace}
+
 \documentclass[]{cv-template}
 
 
@@ -21,11 +23,13 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Marie}{SIMATIC}
-{20 ans - Nationalité Française}
-{Elève Ingénieur en Génie Informatique \\Filière Systèmes Temps Réel et Informatique Enfouie}
-{\input{contactInfo.local.txt}}
-    
+\namesection{Pascal}{SIMATIC}
+{25 ans - Nationalité Française}
+{Licencié de Mathématiques}
+{\faHome ~ 37 rue Raymond de Mareuil --- 91540 Mennecy \\
+  \faEnvelope ~ \href{mailto:pascal@simatic.org}{pascal@simatic.org}\\
+  \faPhone  ~  01 75 66 09 27}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -38,45 +42,43 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Formation} 
 
-\subsection[Université de Technologie de Compiègne]{Université de Technologie \\de Compiègne}
-\descript{2012 - Diplôme attendu en 2018}
-\faCaretRight Génie Informatique \\
-\faCaretRight Filière Systèmes Temps Réel et Informatique Enfouie\\
-\faCaretRight Erasmus à l'Ernst Abbe Hochschule (Jena, Allemagne) - System Design\\
+\subsection{Mathématiques fondamentales \newline et appliquées}
+\descript{2011 -- 2016}
+\mycaret Université Paris-Sud \\
+\mycaret Licence 2015
 \sectionsep
 
-\subsection{2009 - 2012}
-\descript{Lycée Notre Dame de Sion} 
-\faCaretRight Bac. Scientifique - 2012 \\
-\faCaretRight Mention très bien \\
+\subsection{Lycée Notre Dame de Sion}
+\descript{2008 -- 2011} 
+\mycaret Bac. Scientifique - 2011 \\
+\mycaret Spécialité mathématique \\
+\mycaret Mention très bien
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Compétences}
+\subsection{Mathématiques}
+\mycaret Algèbre\\
+\mycaret Analyse\\
+\mycaret Probabilités\\
+\sectionsep
+
 \subsection{Informatique}
-\location{Programmation :}
-VHDL, PACPUS, ROS, Assembleur\\
-C, C++, Python, Lisp, Prolog\\ 
+\mycaret Languages de programmation\\
+VBA (Excel), Java, Haskell, Caml\\
+\mycaret Logiciels \\
+Excel, Scilab, Sage, Eclipse\\
+\sectionsep
 
-\location{Modélisation \& base de données :}
-UML, SQL (PostgreSQL \& MySQL)\\
-
-\location{Outils :}
-Git, Emacs \& Vim, \LaTeX
-
-\location{Multimédia :}
-Reaper, Audacity \\
-the Gimp, Adobe Premiere \\ 
-
+\subsection{Conduite}
+Permis B depuis 2013
+  
 \sectionsep
 \subsection{Langues}
-\faCaretRight  Français (langue maternelle), \\
-\faCaretRight  Anglais (courant), \\
-\faCaretRight  Allemand (B2, Erasmus à Jena en Automne 2016),
-
-\faCaretRight  Formation \& Concours Fleur d'Eloquence (2015 \& 2017).
+\mycaret  Français (langue maternelle), \\
+\mycaret  Anglais (courant) \\
 \sectionsep
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,11 +94,12 @@ the Gimp, Adobe Premiere \\
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Passions}
-Musique - Chant, Piano, Guitare\\
-Cirque - Monocycle, Slackline \\
-Création de sagas radiophoniques \\
-Sport - Parkour, Escalade 
+\subsection{Théologie et philosophie}
 \sectionsep
+\subsection{Littérature}
+poésie, classique et fantasy\\
+\subsection{Musique}
+piano et chant choral\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     ADDITIONAL INFORMATION
@@ -136,92 +139,77 @@ Sport - Parkour, Escalade
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Expérience professionnelle}
 
-\workplace{Alterface Projects}{Février - Juillet 2016}\\
-\position{Stagiaire - développement informatique}{Wavre, Belgique}
-\vspace{0.9em} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Recherche d'une solution embarquée de Roaming Wi-Fi pour un système temps réel.
-\item Python, C embarqué (Atmel SAM4).
-\end{tightemize}
+\workplace{Postulant moine}{Septembre 2018 -- Mai 2019}\\
+\position{Abbaye de Tamié}{Plancherine (73)}
+\begin{itemize}
+\item Conditionnement des fromages
+\item Préparation des commandes
+\item Aide-cuisinier (60 couverts)
+\end{itemize}
 \sectionsep
 
-\workplace{Alterface Projects}{Juillet 2013} \\
-\position{Stagiaire - Stage ouvrier interculturel}{Wavre, Belgique}
+\workplace{Professeur vacataire de mathématiques}{Mai 2018} \\
+\position{Lycée de la plaine de l'Ain}{Ambérieux-en-Bugey (01)}
+\begin{itemize}
+\item 15h hebdomadaires en seconde générale et première scientifique
+\end{itemize}
+\sectionsep
+
+\workplace{Professeur particulier de mathématiques}{2011 -- 2018}\\
+\position{}{}\vspace{-13pt}
+\begin{itemize}
+\item Niveaux de la cinquième à Bac+1
+\end{itemize}
+\sectionsep
+
+\workplace{Service civique}{Mai 2017 -- Octobre 2017} \\
+\position{Valdocco}{Lyon (69)}
+\begin{itemize}
+\item Accompagnement individuel et collectif de jeunes de 6 à 15 ans
+\item Soutien scolaire, ateliers d'ouverture
+\item Animation et travail de rue, encadrement de sorties, camp d'été
+\end{itemize}
+\sectionsep
+
+\workplace{Auteur pédagogique}{Octobre 2014}\\
+\position{Lelivrescolaire}{Lyon (69)}
+\begin{itemize}
+\item Rédaction de fiches de révision et d'exercices
+\end{itemize}
+\sectionsep
+
+\workplace{Développeur informatique -- Stagiaire}{Juillet 2014 -- Août 2014}
+\position{SNECMA}{\'Evry (91)}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Aide à la production et à l'assemblage de pièces électroniques
-\end{tightemize}
+\begin{itemize}
+\item Création d'un base de donnée sur Excel pour estimer des coûts de
+  maintenance
+\end{itemize}
 \sectionsep
 
-\workplace{SNECMA - CFTI}{Février 2013} \\
-\position{Stagiaire - Stage ouvrier}{Evry, 91}
-% \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Formation en Ajustage et Chaudronnerie
-\item Encadrement d'élèves de Troisième en stage d'Ajustage.
-\end{tightemize}
-\sectionsep
+\section{Expérience bénévole}
+\runsubsection{Centre d'accueil et d'orientation d'Ameugny}\hfill\descript{Octobre 2016}
+\begin{itemize}
+\item Accueil et encadrement de réfugiés mineurs isolés venant de Calais
+\end{itemize}
 
-% \runsubsection{The Westminster News} \\
-% \descript{Co-Editors-in-Chief (2014) | Layout Editor (2012) }
-% \location{Sep 2012 – May 2015 | Simsbury, CT}
-% \begin{tightemize}
-% \item Led 30+ staff at a 400-student boarding school to publish the monthly school newspaper.
-% \item Consulted in layout design and technology application.
-% \end{tightemize}
-% \sectionsep
-
-% \runsubsection{VietAbroader Organization} \\
-% \descript{Program Assistant Manager | VAPedia Associate }
-% \location{Mar 2013 – Mar 2014 | Ho Chi Minh City, Vietnam}
-% \begin{tightemize}
-% \item VietAbroader is a non-profit organization run by Vietnamese students abroad.
-% \item Designed the high school content for the VAPedia website.
-% \item Assisted in recruiting guest speakers and volunteers for VietAbroader Study-Abroad Conference 2013.
-% \end{tightemize}
-% \sectionsep
+\runsubsection{Communauté de Taizé}\hfill\descript{Juillet 2013 -- Août 2013}
+\begin{itemize}
+\item Participation à la gestion de conflit et au maintien des règles
+\item Assistance à la logistique pour 3500 couverts (réception et inventaire
+  des palettes, entretien des chambres froides)
+\end{itemize}
 
 
-\section{Projets Universitaires}
-\runsubsection{Véhicules Intelligents}
-\descript{Travail de Laboratoire (HEUDIASYC)}
-Migration de modules PACPUS vers ROS pour un suivi autonome d'un véhicule par un autre.
-
-
-\runsubsection{My Atmega}
-\descript{Design de Processeur}
-Clône en VHDL d'un micro-processeur Atmega 8.
-
-
-\runsubsection{Sciences Cognitives}
-\descript{Travail de Laboratoire (COSTECH)}
-Expérimentations et étude des résultats sur le croisement perceptif.
-
-
-\runsubsection{Kami}
-\descript{Réalité Virtuelle}
-Jeu vidéo codé pour Oculus Rift \& Leap Motion avec Unity 3D. \\
-\faCaretRight \href{youtu.be/lFnLHkYR3sw}{  youtu.be/lFnLHkYR3sw}
-
-
-\runsubsection{Le Pokétâche}
-\descript{Programmation Orientée Objet}
-Logiciel de gestion de projet \& de tâches (C++ et Qt).
+\runsubsection{Communauté de Taizé}\hfill\descript{Juillet 2012 -- Août 2012}
+\begin{itemize}
+\item Gestion d'une équipe de service de repas (10 personnes)
+\item Animation d'un groupe de réflexion de 6 jeunes de 15-16 ans
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projets extra-universitaires}
-\runsubsection{Comédie Musicale de l'UTC }
-\descript{\'{E}criture et Mise en Scène (2015)}
-Comédie Musicale entièrement créée par des étudiants et produite au Théâtre Impérial de Compiègne. \\
-Management de la troupe de théâtre et coordination du reste de l'équipe (80 étudiants).
-
-
-\runsubsection{Spectacle des Lumières de l'UTC}
-\descript{Responsable "Corps" (2015)}
-Spectacle son \& lumière mêlant technique et arts de la scène. Recrutement \& coordination des Acteurs (Théâtre, Danse, Cirque\ldots)
-\sectionsep 
 
 \end{minipage} 
 
