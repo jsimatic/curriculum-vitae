@@ -1,4 +1,5 @@
-#+TITLE: CV de Marie SIMATIC
+
+#+TITLE: CV de Pascal SIMATIC 
 
 * Utilisation rapide
 
@@ -20,4 +21,5 @@ Un petit =make= et c'est parti.
 
 * Crédits
 
-Template de base par Hieu Do, lui même forké de https://github.com/deedy/Deedy-Resume
+- Fork of Thomas Simatic
+- Template de base par Hieu Do, lui même forké de https://github.com/deedy/Deedy-Resume
